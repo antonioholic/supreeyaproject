@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ไซอิ๋ว</title>
+<style>
+:root{
+  --black:#8B1E1E;
+  --dark:#B8860B;
+  --mid:#E8C468;
+  --light:#FDF6E3;
+  --white:#ffffff;
+  --bg:#f5f5f5;
+  --text-dark:#1a1a1a;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+ background:linear-gradient(180deg,#8c3026,#ffd96f,#dfe7f0);
+  font-family:"TH Sarabun New","Sarabun",Tahoma,sans-serif;
+  color:var(--text-dark);
+  padding:30px 16px;
+}
+.container{
+  background-color: #FDF6E3;
+  margin: 0 auto;
+  width: 1024px;
+  border-radius: 15px;
+}
+header{
+  background-position: center;
+  background-image: url(img/header.jpg);
+  opacity: 0.9;
+  background-size: cover;
+  height: 340px;
+  border-radius: 15px 15px 0 0 ;
+}
+
+section{
+  display: flex;
+}
+article{
+  padding-left: 20px;
+  flex: 2;
+}
+
+ul{
+  text-align: center;
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  flex:1;
+  width: 300px;
+}
+a{
+  margin-top:5px ;
+  border-radius: 5px;
+}
+a:link{
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color:white;
+  background-color: #8B1E1E;
+  padding: 30px;
+}
+a:hover{
+  background-color: #D4AF37;
+  color: #ffffff;
+}
+a:visited{
+    color:white;
+}
+.active{
+  background-color: #c15a5a;
+}
+.lead{
+  margin: 30px;
+  background:white;
+  border-right:6px solid var(--black);
+  padding:20px 24px;border-radius:6px;
+  font-size:19px;line-height:1.85;margin-bottom:34px;
+}
+
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:38px;}
+.gallery img{width:100%;height:150px;object-fit:cover;border-radius:8px;box-shadow:0 6px 16px rgba(0,0,0,.15);}
+
+.section-title{font-size:40px;color:var(--black);border-bottom:3px solid var(--black);padding:20px;margin:10px 0;}
+.card{padding: 20px; margin: 10px;}
+.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.card{background-color: #ffffff;border-radius:10px;overflow:hidden;box-shadow:0 8px 18px rgba(0,0,0,.1);}
+.card img{width:100%;height:350px;object-fit:cover;display:block;border-radius: 15px;}
+.card .body{padding:16px 18px;}
+.card .body h3{color:var(--dark);font-size:30px;margin-bottom:6px;}
+.card .body p{font-size:25px;line-height:2;}
+.card.no-img .body{padding:22px 20px;}
+
+footer{border-radius:0 0 15px 15px;text-align:center;padding:22px;background:var(--black);color:#fff;font-size:17px;letter-spacing:.5px;}
+
+@media(max-width:800px){
+  .gallery{grid-template-columns:repeat(2,1fr);}
+  .card-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header></header>
+<section>
+<nav>
+<ul>
+<li><a href="index.html">เนื้อเรื่อง</a></li>
+<li><a href="page2.html" class="active">พระถังซัมจั๋ง</a></li>
+<li><a href="page3.html"> ซุนหงอคง</a></li>
+<li><a href="page4.html">ซัวเจ๋ง</a></li>
+<li><a href="page5.html">ตือโป๊ยก่าย</a></li></ul>
+</nav>
+<article>
+<h2 class="section-title">พระถังซัมจั๋ง</h2>
+<div class="card">
+<div class="body">
+<h3>ประวัติ</h3>
+<p>พระถังซัมจั๋ง (Tang Sanzang) เดิมทีคือ "พระจินฉาน" ศิษย์ของพระตถาคตที่ทำผิดวินัยจนต้องมาจุติบนโลกมนุษย์ เกิดในตระกูลขุนนาง แต่ชีวิตระเหเร่ร่อนตั้งแต่ทารกจนได้บวชเป็นพระภิกษุ ท่านเป็นพระสงฆ์ผู้มีจิตใจบริสุทธิ์ เมตตา และเปี่ยมด้วยความศรัทธาอย่างแรงกล้า แม้จะไม่มีอิทธิฤทธิ์เวทมนตร์ และมักตกเป็นเหยื่อของการกลอุบายของปีศาจ แต่ความยึดมั่นในศีลธรรมของท่านคือศูนย์รวมจิตใจที่รวบรวมเหล่าศิษย์ให้เดินทางจนบรรลุเป้าหมาย 
+</p>
+<img src="img/2.png" alt="ไซอิ๋ว">
+</div>
+</div>
+</article>
+</section>
+<footer><p>จัดทำโดย น.ส. สุปรียา เพ็ญมณี ม.6/9 เลขที่ 36</p></footer>
+</div>
+</body>
+</html>
